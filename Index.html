@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso a la Plataforma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Acceso a la Plataforma</h2>
+            <p id="error-message" class="error"></p>
+            
+            <input type="email" id="loginEmail" placeholder="Correo Electrónico">
+            <input type="password" id="loginPassword" placeholder="Contraseña">
+            <button id="loginBtn">Iniciar Sesión</button>
+            
+            <hr>
+
+            <p>¿No tienes cuenta? Regístrate:</p>
+            <input type="email" id="registerEmail" placeholder="Correo Electrónico">
+            <input type="password" id="registerPassword" placeholder="Mín. 6 caracteres">
+            <button id="registerBtn">Registrarse</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
